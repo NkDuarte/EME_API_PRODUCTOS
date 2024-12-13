@@ -48,8 +48,8 @@ project/
 
 1. **Clonar el repositorio**:
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
-   cd project/
+   git clone https://github.com/NkDuarte/EME_API_PRODUCTOS.git
+   cd EME_API_PRODUCTOS/
    ```
 2. **Instalar dependencias**:
    ```bash
