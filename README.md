@@ -82,7 +82,6 @@ project/
 
 La API cuenta con los siguientes endpoints:
 
-|--------|-----------------------|-----------------------------|
 | Método | Ruta                  | Descripción                 |
 |--------|-----------------------|-----------------------------|
 | GET    | `/api/products`       | Listar todos los productos. |
