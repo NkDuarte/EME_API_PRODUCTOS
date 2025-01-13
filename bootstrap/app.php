@@ -13,8 +13,7 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->validateCsrfTokens(except: [
-            'https://emeapiproductos-production.up.railway.app/api/products/*',
-            'https://emeapiproductos-production.up.railway.app/api/products'
+            '*'
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
