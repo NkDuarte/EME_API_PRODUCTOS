@@ -12,12 +12,9 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        $url_prod = "https://emeapiproductos-production.up.railway.app/";
-        $url_local = "http://localhost:8000";
-
         $middleware->validateCsrfTokens(except: [
-            $url_prod + '/api/products/*',
-            $url_prod + '/api/products'
+            'https://emeapiproductos-production.up.railway.app//api/products/*',
+            'https://emeapiproductos-production.up.railway.app//api/products'
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
